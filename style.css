@@ -1,4 +1,4 @@
-/* General styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ h2 {
     font-family: 'Roboto Slab', serif;
     color: #ab3c3c;
     text-align: left;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px 0;
 }
 
@@ -22,7 +22,7 @@ h1 {
     font-family: 'Roboto Slab', serif;
     color: #ab3c3c;
     text-align: left;
-    font-size: 36px;
+    font-size: 50px;
     margin: 20px 0;
 }
 
@@ -32,7 +32,6 @@ a {
     text-decoration: none;
 }
 
-/* Hero Section */
 .hero-section {
     background-color: #314b57;
     padding: 0px 0;
@@ -65,7 +64,7 @@ a {
 
 .tdiv{
     color:#ffffff;
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 20px;
     font-family: 'Roboto Slab', serif;
     
@@ -80,8 +79,8 @@ a {
 }
 .mapi{
     max-width: 400px;
-    max-height: 240px;
-    display: block;
+    max-height: 250px;
+    display:block;
 
 }
 
@@ -93,6 +92,7 @@ a {
     width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
+    padding-bottom: 10px;
   
 }
 
@@ -111,13 +111,14 @@ a {
 
 .service-links p {
     font-family: 'Roboto Slab', serif;
+
 }
 
-/* Service Area Section */
+
 .service-area {
     max-width: 1200px;
     margin: 20px auto;
-    padding-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .service-content {
@@ -129,41 +130,47 @@ a {
 }
 
 .city-image {
-    max-width: 45%;
+    max-width: 30%;
     height: auto;
 }
 
-.map-image {
-    max-width: 45%;
+/* .map-image {
+    max-width: 40%;
     height: auto;
-}
+} */
 
 .service-description {
     flex-basis: 100%;
-    max-width: 65%;
+    max-width: 67%;
     text-align: left;
     margin-top: 20px;
 }
 
 .service-description p {
-    font-size: 16px;
+    font-size: 17.5px;
     margin-bottom: 20px;
     line-height: 1.4;
+    margin-top: -20px;
 }
-.linkdiv {
-   padding-top: 5px;
+
+.furtoppad {
+   padding-top: 20px;
+}
+.airtoppad{
+    padding-top: 5px;
 }
 
 .mid-sec{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 .mid-div{
     display:flex;
     width: 1200px;
 }
 
-/* Articles Section */
+
 .articles {
     background-color: #ffffff;
     padding-top: 10px;
@@ -176,7 +183,7 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -191,7 +198,6 @@ a {
 .article-grid img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
     margin-bottom: 10px;
 }
 
@@ -201,12 +207,47 @@ a {
     text-align: left;
 }
 
-.article-grid span {
+/* .article-grid span {
     color: #ab3c3c;
     font-weight: bold;
+} */
+
+.readmore p{
+    color: #ab3c3c;
+    text-decoration-color: #ab3c3c;
+    text-decoration: underline;
+    margin-top: 15px;
 }
 
-/* Responsive Styles */
+.helpfulwidth {
+    width:31.3%;
+}
+
+.helpfulwidth p{
+    /* display: -webkit-box;
+    width: 100%;
+    height: 70px;
+    max-height:70px; 
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block; */
+
+    font-size: 16.8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100px;
+    line-height: 25px;
+    max-height: 100px;
+
+
+}
+
+
 @media (max-width: 768px) {
     .service-content {
         flex-direction: column;
@@ -290,6 +331,13 @@ a {
         height: 150px;
         border-radius: 50%;
         margin-bottom: 10px;
+    }
+   
+}
+
+@media screen and (max-width:700px)  {
+    .helpfulwidth {
+        width: 90%;
     }
     
 }
